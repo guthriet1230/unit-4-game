@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,163 @@
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
 </head>
+
 <body>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <img src="assets/images/Backgroundimg.jpg" id="background-img">
     
-    <script src="assets/javascript/game.js"></script>
+    
+    
+    
+        <div class="container">
+    
+<div class="row" id="spacer-row"></div>
+
+            <div class="row">
+                <!---------------------------------------
+             Aside 1 - Instructions
+             ------------------------------------>
+                <aside class="container col-md-6" id="instructions">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="suit" id="suit-diamond" src="assets/images/suits/diamond-suit.png">
+                        </div>
+    
+                        <div class="col-md-8" >
+                            <h1>INSTRUCTIONS</h1>
+                        </div>
+    
+                        <div class="col-md-2">
+                            <img class="suit" id="suit-club" src="assets/images/suits/club-suit.png">
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="row">
+                        <div class="col-md-2"></div>
+    
+                        <div class="col-md-10">
+                            <ul>
+                                <li> You will be given a random number at the start of the game.
+                                </li>
+                                <li>There are four suits below. By clicking on a suit you will add a specific amount of
+                                    points
+                                    to your total score.</li>
+                                <li>You win the game by matching your total score to the score titled: "random number"</li>
+                                <li> The value of each crystal is hidden from you until you click on it.</li>
+                                <li>Each time when the game starts, the game will change the values of each suit. </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="col-md-2"></div> -->
+                    </div>
+                </aside>
+    
+    
+    
+    
+                <!---------------------------------------
+             Middle of Row
+             ------------------------------------>
+    
+                <div class="col-md-2"></div>
+    
+                <!---------------------------------------
+             Aside 2 - Scoreboard
+             ------------------------------------>
+                <aside class="container col-md-4" id="scoreboard">
+    
+                    <div class="row">
+                        <div class="col-md-2"><img class="suit" id="suit-heart" src="assets/images/suits/heart-suit.png"></div>
+    
+                        <div class="col-md-8"><h1>SCOREBOARD</h1></div>
+    
+                        <div class="col-md-2"><img class="suit"id="suit-spade" src="assets/images/suits/spade-suit.png"></div>
+    
+    
+                    </div>
+    
+                    <div clas="row">
+    
+                            <div class="col-md-2"></div>
+    
+                            <div class="col-md-8">
+                                <ul>
+                                    <li>Random Number: <span id="random-number"> </span></li>
+                                    <li>Wins: <span id="wins-score"> </span></li>
+                                    <li>Loses: <span id="loses-score"> </span></li>
+                                </ul>
+                            </div>
+        
+                            <div class="col-md-2"></div>
+        
+    
+                    </div>
+                    
+                  
+                    
+                    
+                </aside>
+            </div>
+       
+    <!---------------------------------------
+         Section - Cards
+         ------------------------------------>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <img class="card" id="spade" src="assets/images/cards/Spades.png">
+            </div>
+
+            <div class="col">
+                <img class="card" id="heart" src="assets/images/cards/Hearts.png">
+            </div>
+
+            <div class="col">
+                <img class="card" id="club" src="assets/images/cards/Clubs.png">
+            </div>
+            <div class="col">
+                <img class="card" id="diamond" src="assets/images/cards/Diamonds.png">
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------
+        Your Score 
+        ------------------------------------>
+
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <h2>Your Score:</h2>
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+
+    <!------------------------------------------
+        Footer 
+        ------------------------------------>
+    <footer>
+        <div class="footer-container">
+            <a href="https://github.com/guthriet1230"><img id="github" src="assets/images/Footer/GithubLogo.png"></a>
+            <a href="https://www.linkedin.com/in/tyler-guthrie-0a608857/"><img id="linkedin" src="assets/images/Footer/LinkedinLogo.jpg"></a>
+            <a href="mailto:guthriet1230@gmail.com"><img id="gmail" src="assets/images/Footer/GmailLogo.png"></a>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
+
 </html>

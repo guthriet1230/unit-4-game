@@ -1,0 +1,142 @@
+
+#background-img{
+    position:fixed;
+    width:100%;
+    z-index:-100;
+}
+
+div{
+    margin:0;
+    padding:0;
+    /* border:1px black solid; */
+}
+
+/* ------------------------------
+Asides
+--------------------------------*/
+#spacer-row{
+    height:25px;
+}
+
+
+.suit{
+    width:100%;
+    margin:auto;
+    text-align: center;
+}
+
+/* ------------------------------
+Aside - Instructions
+--------------------------------*/
+#instructions{
+    color:white;
+    font-size:10px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius:5%;
+    padding:5px;
+}
+
+#instructions h1{
+    font-size:30px;
+    text-align:center;
+}
+
+#instructions ul{
+    list-style-type: circle;
+}
+
+#suit-diamond{
+float:right;
+} 
+
+#suit-club{
+float:left;
+}
+
+/* ------------------------------
+Aside - Scoreboard
+--------------------------------*/
+#scoreboard{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius:5%;
+}
+
+#scoreboard h1{
+    font-size:30px;
+    text-align:center;
+}
+
+#suit-heart{
+float:right;
+} 
+
+#suit-spade{
+float:left;
+}
+
+
+/* ------------------------------
+Section
+--------------------------------*/
+.card{
+    width:60%;
+}
+
+#spade{
+    transform:rotate(-40deg);
+}
+
+#heart{
+    transform:rotate(-20deg);
+}
+
+#club{
+    transform:rotate(20deg);
+}
+
+#diamond{
+    transform:rotate(40deg);
+}
+
+/* ------------------------------
+FOOTER 
+--------------------------------*/
+
+footer {
+    background-color: rgba(48, 47, 41, 0.9);
+    height: 70px;
+    position: relative;
+    border-top: 3px green solid;
+    bottom:0;
+  }
+  
+  footer img {
+    width: 40px;
+    text-align: center;
+    margin: auto;
+    position: relative;
+  }
+  
+  .footer-container {
+    text-align: center;
+  }
+  
+  #github {
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+  #linkedin {
+    border-radius: 6%;
+    margin: 10px;
+    width: 35px;
+  }
+  
+  #gmail {
+    border-radius: 5%;
+    margin: 10px;
+    margin-bottom: 10px;
+    width: 35px;
+  }
+  
