@@ -77,6 +77,18 @@ Aside - Scoreboard
   float: left;
 }
 
+#loses-score {
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#wins-score {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
 /* ------------------------------
 Section - Cards
 --------------------------------*/
@@ -106,15 +118,15 @@ section {
   transform: rotate(50deg);
 }
 
-#your-number{
-  color:red;
-  font-size:20px;
+#your-number {
+  color: red;
+  font-size: 20px;
   font-weight: 700;
 }
 
-#random-number{
-  color:black;
-  font-size:20px;
+#random-number {
+  color: black;
+  font-size: 20px;
   font-weight: 700;
 }
 
