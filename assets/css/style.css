@@ -1,5 +1,4 @@
 #background-img {
-  /* position:fixed; */
   position: relative;
   width: 100%;
   z-index: -100;
@@ -8,7 +7,16 @@
 div {
   margin: 0;
   padding: 0;
-  /* border:1px black solid; */
+}
+
+/* ------------------------------
+Header
+--------------------------------*/
+
+header h1 {
+  font-size: 100px;
+  text-align: center;
+  color: white;
 }
 
 /* ------------------------------
@@ -39,6 +47,7 @@ Aside - Instructions
   font-size: 30px;
   text-align: center;
   font-style: italic;
+  text-decoration: underline;
 }
 
 #instructions ul {
@@ -67,6 +76,7 @@ Aside - Scoreboard
   font-size: 30px;
   text-align: center;
   font-style: italic;
+  text-decoration: underline;
 }
 
 #suit-heart {
@@ -100,22 +110,33 @@ section {
   width: 150px;
 }
 
+#club {
+  text-align: center;
+  width: 120px;
+  margin: 0 7%;
+  float: left;
+}
+
 #spade {
-  transform: rotate(-50deg);
+  text-align: center;
+  width: 120px;
+  height: 150px;
+  margin: 0 6.5%;
   float: right;
 }
 
 #heart {
-  transform: rotate(-20deg);
-  float: right;
-}
-
-#club {
-  transform: rotate(20deg);
+  text-align: center;
+  width: 120px;
+  margin: 0 7%;
+  float: left;
 }
 
 #diamond {
-  transform: rotate(50deg);
+  float: right;
+  text-align: center;
+  width: 120px;
+  margin: 0 6.5%;
 }
 
 #your-number {
@@ -137,7 +158,7 @@ FOOTER
 footer {
   background-color: rgba(48, 47, 41, 0.9);
   height: 70px;
-  position: relative;
+  position: static;
   border-top: 3px green solid;
   bottom: 0;
   margin-top: 100px;
@@ -170,4 +191,177 @@ footer img {
   margin: 10px;
   margin-bottom: 10px;
   width: 35px;
+}
+
+/* ------------------------------
+FOOTER 
+--------------------------------*/
+
+footer {
+  background-color: rgba(48, 47, 41, 0.9);
+  height: 70px;
+  position: relative;
+  border-top: 3px green solid;
+  bottom: 0;
+}
+
+footer img {
+  width: 40px;
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+#github {
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#linkedin {
+  border-radius: 6%;
+  margin: 10px;
+  width: 35px;
+}
+
+#gmail {
+  border-radius: 5%;
+  margin: 10px;
+  margin-bottom: 10px;
+  width: 35px;
+}
+/* ----------------------
+Media Screen 1200 
+------------------------- */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #spade {
+    margin: 0 5%;
+  }
+
+  #heart {
+    margin: 0 5%;
+  }
+
+  #club {
+    margin: 0 5%;
+  }
+
+  #diamond {
+    margin: 0 5%;
+  }
+}
+
+/* ----------------------
+Media Screen 980 
+------------------------- */
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #instructions h1 {
+    font-size: 20px;
+  }
+
+  #instruction-rules{
+    margin-left:10px;
+  }
+
+  #scoreboard h1 {
+    font-size: 20px;
+  }
+
+  #spade {
+    margin: 0 3%;
+  }
+
+  #heart {
+    margin: 0 3%;
+  }
+
+  #club {
+    margin: 0 3%;
+  }
+
+  #diamond {
+    margin: 0 3%;
+  }
+}
+/* ----------------------
+Media Screen 768px 
+------------------------- */
+
+@media screen and (max-width: 769px) {
+  #suit-heart {
+    width: 100%;
+    display: none;
+  }
+
+  #suit-spade {
+    width: 100%;
+    display: none;
+  }
+
+  #suit-diamond {
+    width: 100%;
+    display: none;
+  }
+
+  #suit-club {
+    width: 100%;
+    display: none;
+  }
+
+  #spade {
+    width: 75px;
+    height: 100px;
+    margin: 0 4%;
+  }
+
+  #heart {
+    width: 80px;
+    margin: 0 4%;
+  }
+
+  #club {
+    width: 80px;
+    height: 100px;
+    margin: 0 4%;
+  }
+
+  #diamond {
+    width: 80px;
+    margin: 0 4%;
+  }
+
+  #instruction ul {
+    padding: 10px;
+    border: 1px gray solid;
+    color: red;
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 535px) {
+  #spade {
+    width: 75px;
+    height: 100px;
+    margin: 0 10%;
+  }
+
+  #heart {
+    width: 80px;
+    margin: 0 10%;
+  }
+
+  #club {
+    width: 80px;
+    height: 100px;
+    margin: 0 10%;
+  }
+
+  #diamond {
+    width: 80px;
+    margin: 0 10%;
+  }
 }

@@ -17,12 +17,19 @@
 
 <body background="assets/images/Greenimg.jpg">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <img src="assets/images/Greenimg.jpg" id="background-img"> -->
+
 
 
 
 
     <div class="container">
+
+        <header class="row">
+            <div class="col-md-12">
+                <h1>UNIT-4-GAME</h1>
+            </div>
+        </header>
+
 
         <div class="row" id="spacer-row"></div>
 
@@ -37,7 +44,7 @@
                     </div>
 
                     <div class="col-md-8">
-                        <h1><u>INSTRUCTIONS</u></h1>
+                        <h1 id="instructions-title">INSTRUCTIONS</h1>
                     </div>
 
                     <div class="col-md-2">
@@ -50,7 +57,7 @@
                 <div class="row">
                     <div class="col-md-2"></div>
 
-                    <div class="col-md-10">
+                    <div class="col-md-10" id="instruction-rules">
                         <ul>
                             <li> You will be given a random number on the scoreboard.
                             </li>
@@ -62,7 +69,6 @@
                             <li>Each time when the game starts, the game will change the values of each suit. </li>
                         </ul>
                     </div>
-                    <!-- <div class="col-md-2"></div> -->
                 </div>
             </aside>
 
@@ -84,7 +90,7 @@
                     <div class="col-md-2"><img class="suit" id="suit-heart" src="assets/images/suits/heart-suit.png"></div>
 
                     <div class="col-md-8">
-                        <h1><u>SCOREBOARD</u></h1>
+                        <h1 id="scoreboard-title">SCOREBOARD</h1>
                     </div>
 
                     <div class="col-md-2"><img class="suit" id="suit-spade" src="assets/images/suits/spade-suit.png"></div>
@@ -120,24 +126,13 @@
 
             <div class="row">
 
-                <div class="col-md-5">
+                <div class="col-md-12">
                     <img class="card" id="heart" src="assets/images/cards/Hearts.png">
-                </div>
 
-                <div class="col-md-2"></div>
-
-                <div class="col-md-5">
                     <img class="card" id="club" src="assets/images/cards/Clubs.png">
-                </div>
-            </div>
 
-
-            <div class="row">
-                <div class="col-md-3">
                     <img class="card" id="spade" src="assets/images/cards/Spades.png">
-                </div>
-                <div class="col-md-6"></div>
-                <div class="col-md-3">
+
                     <img class="card" id="diamond" src="assets/images/cards/Diamonds.png">
                 </div>
 
