@@ -200,9 +200,10 @@ FOOTER
 footer {
   background-color: rgba(48, 47, 41, 0.9);
   height: 70px;
-  position: relative;
-  border-top: 3px green solid;
+  position: fixed;
+  border-top: 3px rgb(0, 104, 168) solid;
   bottom: 0;
+  width:100%;
 }
 
 footer img {
